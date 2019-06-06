@@ -101,30 +101,28 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        txtnom = new javax.swing.JTextField();
-        txtid = new javax.swing.JTextField();
-        txtnote = new javax.swing.JTextField();
-        txtprenom = new javax.swing.JTextField();
-        txtbr = new javax.swing.JComboBox<>();
-        jPanel2 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tble = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         txtrecherche = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        txtid = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        txtprenom = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtbr = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
+        txtnote = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtnom = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tble = new javax.swing.JTable();
+        jLabel9 = new javax.swing.JLabel();
 
         jButton11.setText("jButton11");
 
@@ -144,118 +142,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(500, 600));
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setPreferredSize(new java.awt.Dimension(227, 288));
-        jPanel1.setLayout(null);
-
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel1.setText("id :");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(33, 47, 40, 17);
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel2.setText("Prenom :");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(33, 142, 66, 17);
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel3.setText("Nom :");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(33, 97, 40, 17);
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel4.setText("Branche:");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(33, 188, 66, 17);
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel5.setText("Note:");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(33, 223, 33, 17);
-
-        txtnom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtnom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtnomActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtnom);
-        txtnom.setBounds(150, 90, 110, 30);
-
-        txtid.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtid.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtidActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtid);
-        txtid.setBounds(150, 40, 110, 30);
-
-        txtnote.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtnote.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtnoteActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtnote);
-        txtnote.setBounds(150, 220, 110, 30);
-
-        txtprenom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtprenom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtprenomActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtprenom);
-        txtprenom.setBounds(150, 140, 110, 30);
-
-        txtbr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INFO ", "Physique", "Maths", " " }));
-        jPanel1.add(txtbr);
-        txtbr.setBounds(150, 190, 110, 20);
-
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(40, 90, 300, 270);
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        tble.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
-            }
-        ));
-        tble.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbleMouseClicked(evt);
-            }
-        });
-        jScrollPane1.setViewportView(tble);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(370, 120, 430, 190);
-
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/add-administrator.png"))); // NOI18N
         jButton2.setText("Ajouter");
@@ -265,7 +151,7 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(60, 370, 180, 60);
+        jButton2.setBounds(40, 370, 153, 50);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/icons8-change-user-24.png"))); // NOI18N
@@ -276,7 +162,7 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(130, 450, 140, 50);
+        jButton3.setBounds(410, 370, 150, 50);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/icons8-cancel-48.png"))); // NOI18N
@@ -287,7 +173,7 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(420, 370, 180, 60);
+        jButton4.setBounds(590, 370, 160, 50);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/icons8-update-50.png"))); // NOI18N
@@ -298,23 +184,9 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(250, 370, 160, 60);
+        jButton5.setBounds(220, 370, 160, 50);
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton6.setText("resliser par");
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton6MouseClicked(evt);
-            }
-        });
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(630, 390, 120, 30);
-
+        jButton7.setBackground(new java.awt.Color(204, 204, 255));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/icons8-search-24.png"))); // NOI18N
         jButton7.setText("recherche");
@@ -324,7 +196,7 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton7);
-        jButton7.setBounds(360, 450, 140, 50);
+        jButton7.setBounds(230, 460, 140, 40);
 
         txtrecherche.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         txtrecherche.addActionListener(new java.awt.event.ActionListener() {
@@ -333,17 +205,13 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtrecherche);
-        txtrecherche.setBounds(530, 460, 120, 30);
+        txtrecherche.setBounds(380, 460, 120, 40);
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 48)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 204, 255));
         jLabel6.setText("Gestion des notes");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(240, 20, 310, 50);
-
-        jButton9.setText("jButton9");
-        getContentPane().add(jButton9);
-        jButton9.setBounds(430, 470, 73, 23);
+        jLabel6.setBounds(150, 20, 400, 50);
 
         jButton14.setText("HISTO");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -352,26 +220,120 @@ public class Gestion_des_notes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton14);
-        jButton14.setBounds(700, 40, 63, 23);
+        jButton14.setBounds(650, 310, 120, 23);
+
+        jButton8.setBackground(new java.awt.Color(204, 204, 255));
+        jButton8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jButton8.setText("Menu Principale");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(643, 10, 140, 50);
+
+        txtid.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtidActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtid);
+        txtid.setBounds(160, 110, 110, 30);
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("id :");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(90, 110, 40, 20);
+
+        txtprenom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtprenom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtprenomActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtprenom);
+        txtprenom.setBounds(160, 190, 110, 30);
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Prenom :");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(90, 200, 66, 17);
+
+        txtbr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INFO ", "Physique", "Maths", " " }));
+        getContentPane().add(txtbr);
+        txtbr.setBounds(160, 240, 110, 20);
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Branche:");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(90, 240, 66, 17);
+
+        txtnote.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtnote.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnoteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtnote);
+        txtnote.setBounds(160, 280, 110, 30);
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Note:");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(90, 290, 33, 17);
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Nom :");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(90, 160, 40, 17);
+
+        txtnom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtnom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnomActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtnom);
+        txtnom.setBounds(160, 150, 110, 30);
+
+        tble.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Nom", "Prenom", "Matiére", "Note"
+            }
+        ));
+        tble.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbleMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(tble);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(360, 130, 410, 157);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/gestion.jpg"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(0, 0, 800, 510);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtnomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtnomActionPerformed
-
     private void txtidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtidActionPerformed
-
-    private void txtnoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnoteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtnoteActionPerformed
-
-    private void txtprenomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtprenomActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtprenomActionPerformed
 
     //la méthode pour ajouter un etudiant à la base de donnée 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -445,10 +407,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         // TODO add your handling code here:
         afficher();
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
            
     //Methode pour faire la recherche
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -476,13 +434,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         }catch(Exception e){JOptionPane.showMessageDialog(null, "erreur de deplacement"+e.getLocalizedMessage());}
     }//GEN-LAST:event_tbleMouseClicked
 
-    //la methode pour afficher le realiser par
-    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-        // TODO add your handling code here:
-        Realisation a=new Realisation();
-        a.setVisible(true);
-    }//GEN-LAST:event_jButton6MouseClicked
-
     private void txtrechercheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtrechercheActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtrechercheActionPerformed
@@ -506,6 +457,25 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         frame.setSize(450,350);
         
     }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+         PrincipaleProf prin =new PrincipaleProf();
+        this.setVisible(false);
+        prin.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void txtprenomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtprenomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtprenomActionPerformed
+
+    private void txtnoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnoteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnoteActionPerformed
+
+    private void txtnomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnomActionPerformed
 
     /**
      * @param args the command line arguments
@@ -553,9 +523,8 @@ public class Gestion_des_notes extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -563,8 +532,7 @@ public class Gestion_des_notes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tble;
     private javax.swing.JComboBox<String> txtbr;
