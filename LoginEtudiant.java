@@ -41,6 +41,7 @@ public class LoginEtudiant extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jToggleButton1 = new javax.swing.JToggleButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -48,27 +49,33 @@ public class LoginEtudiant extends javax.swing.JFrame {
         txtpass = new javax.swing.JTextField();
         txtemail = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+
+        jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(700, 500));
         getContentPane().setLayout(null);
 
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 500));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Mot de passe : ");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 220, 140, 30);
+        jLabel1.setBounds(150, 280, 140, 30);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Espace etudiant");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(190, 50, 310, 50);
+        jLabel2.setBounds(250, 60, 200, 50);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("E-mail :");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 160, 100, 30);
+        jLabel3.setBounds(150, 240, 100, 30);
 
         txtpass.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         txtpass.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +84,7 @@ public class LoginEtudiant extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtpass);
-        txtpass.setBounds(230, 220, 180, 30);
+        txtpass.setBounds(360, 290, 180, 30);
 
         txtemail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +92,7 @@ public class LoginEtudiant extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtemail);
-        txtemail.setBounds(230, 160, 180, 30);
+        txtemail.setBounds(360, 240, 180, 30);
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 51, 255));
@@ -96,16 +103,19 @@ public class LoginEtudiant extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(110, 330, 120, 40);
+        jButton1.setBounds(430, 380, 120, 40);
 
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 51, 255));
-        jButton2.setText("Fermer");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(420, 330, 130, 40);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/school-student.png"))); // NOI18N
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(90, 10, 560, 510);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ecole/icons/blanc.jpg"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(5, 4, 680, 520);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 690, 470);
+        jPanel1.setBounds(0, 0, 720, 530);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -123,12 +133,13 @@ public class LoginEtudiant extends javax.swing.JFrame {
         // TODO add your handling code here:
         try{
         stm=conn.obtenirConnexion().createStatement();
-        ResultSet Rs=stm.executeQuery("Select * from loginstudent WHERE email='"+txtemail.getText()+
+        Rs=stm.executeQuery("Select * from loginstudent WHERE email='"+txtemail.getText()+
                 "'and mdp='"+txtpass.getText()+"'");
         
         if(Rs.next()){
         JOptionPane.showMessageDialog(null,"Connexion valide");
         PrincipaleEtudiant p = new PrincipaleEtudiant();
+        this.setVisible(false);
         p.setVisible(true);
         }else{
         JOptionPane.showMessageDialog(null, "Identifiants Invalide");
@@ -178,11 +189,13 @@ public class LoginEtudiant extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTextField txtemail;
     private javax.swing.JTextField txtpass;
     // End of variables declaration//GEN-END:variables
