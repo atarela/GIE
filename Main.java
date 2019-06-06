@@ -16,6 +16,13 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+         PageAccueil accueil =new PageAccueil();
+         
+       accueil.setVisible(true);
+       
     }
+
+
     
 }
