@@ -108,7 +108,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         txtrecherche = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         txtid = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -213,15 +212,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(150, 20, 400, 50);
 
-        jButton14.setText("HISTO");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton14);
-        jButton14.setBounds(650, 310, 120, 23);
-
         jButton8.setBackground(new java.awt.Color(204, 204, 255));
         jButton8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton8.setText("Menu Principale");
@@ -264,6 +254,11 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         jLabel2.setBounds(90, 200, 66, 17);
 
         txtbr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INFO ", "Physique", "Maths", " " }));
+        txtbr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbrActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtbr);
         txtbr.setBounds(160, 240, 110, 20);
 
@@ -438,26 +433,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtrechercheActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        
-        
-       DefaultCategoryDataset dataset=new DefaultCategoryDataset();
-       HashMap<String,Integer> noteEleves = new HashMap<String,Integer>();
-       noteEleves.put("Aya", 10);
-       noteEleves.put("Segado", 20);
-       noteEleves.put("Atar", 12);
-       noteEleves.put("Nasser", 22);
-       noteEleves.forEach((k,v) -> dataset.setValue(v, "Marks", k));
-        //dataset.setValue(90, "Marks", "Student4");
-        JFreeChart chart = ChartFactory.createBarChart("Student score", "student name", "Marks", dataset, PlotOrientation.VERTICAL, false, true, false);
-        CategoryPlot p = chart.getCategoryPlot();
-        p.setRangeGridlinePaint(Color.black);
-        ChartFrame frame = new ChartFrame("Bar Chart for student", chart);
-        frame.setVisible(true);
-        frame.setSize(450,350);
-        
-    }//GEN-LAST:event_jButton14ActionPerformed
-
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
          PrincipaleProf prin =new PrincipaleProf();
@@ -476,6 +451,10 @@ public class Gestion_des_notes extends javax.swing.JFrame {
     private void txtnomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnomActionPerformed
+
+    private void txtbrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtbrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtbrActionPerformed
 
     /**
      * @param args the command line arguments
@@ -518,7 +497,6 @@ public class Gestion_des_notes extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
